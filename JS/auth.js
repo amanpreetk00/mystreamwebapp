@@ -85,7 +85,9 @@ function handleResponse(response) {
       // Display upload form
       document.getElementById("uploadForm").style.display = "block";
       document.getElementById("watchVideos").style.display = "none";
-    } else if (response.account.username === "secondemail@example.com") {
+    } else if (
+      response.account.username === "amanpreet_kaur-ak2@ulster.ac.uk"
+    ) {
       // Hide upload form
       document.getElementById("uploadForm").style.display = "none";
       document.getElementById("watchVideos").style.display = "block";
