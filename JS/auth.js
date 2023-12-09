@@ -4,7 +4,7 @@ const msalConfig = {
     authority:
       "https://mystreams.b2clogin.com/mystreams.onmicrosoft.com/B2C_1_mystream",
     knownAuthorities: ["mystreams.b2clogin.com"],
-    redirectUri: "https://polite-grass-0ad059b03.4.azurestaticapps.net",
+    redirectUri: window.location.origin,
   },
   cache: {
     cacheLocation: "localStorage",
