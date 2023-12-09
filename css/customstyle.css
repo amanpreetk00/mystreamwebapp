@@ -1,0 +1,16 @@
+.navbar-custom {
+  background-color: #007bff;
+}
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+  color: #ffffff;
+}
+/* Hide content by default */
+#mainContent {
+  display: none;
+}
+/* Style for the welcome message and sign in button */
+#welcomePage {
+  text-align: center;
+  margin-top: 50px;
+}

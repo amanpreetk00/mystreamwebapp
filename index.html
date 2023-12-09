@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/customstyle.css" />
+    <script src="https://alcdn.msauth.net/browser/2.18.0/js/msal-browser.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>MyStream</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">MyStream</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto" id="watchVideos">
+            <li class="nav-item">
+              <a class="nav-link" href="viewfiles.html" id="viewVideos"
+                >Watch Videos</a
+              >
+            </li>
+          </ul>
+
+          <ul class="navbar-nav ms-auto" id="authNav">
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="signInButton" onclick="signIn()"
+                >Sign In</a
+              >
+            </li>
+          </ul>
+
+          <ul class="navbar-nav ms-auto" id="authNav">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                id="signOutButton"
+                onclick="signOut()"
+                >Sign Out</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <h3 id="welcomeMessage" style="display: none"></h3>
+
+    <!-- Main Content -->
+    <div id="mainContent" class="container mt-5" style="display: none">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="text-center">Welcome to MyStream</h1>
+          <p class="text-center">For the CW2</p>
+        </div>
+      </div>
+
+      <!-- New Asset Box -->
+      <div class="row align-items-start">
+        <div class="col-2"></div>
+        <div
+          class="col-8"
+          style="text-align: left; border-bottom: 1px solid #222222"
+        >
+          <p>Add Media Files</p>
+          <!-- Form fields here -->
+          <div class="mb-3">
+            <label for="FileName" class="form-label">File Name</label>
+            <input type="text" class="form-control" id="FileName" />
+          </div>
+          <div class="mb-3">
+            <label for="userID" class="form-label">User ID</label>
+            <input type="text" class="form-control" id="userID" />
+          </div>
+          <div class="mb-3">
+            <label for="userName" class="form-label">User Name</label>
+            <input type="text" class="form-control" id="userName" />
+          </div>
+          <div class="mb-3">
+            <label for="title" class="form-label">Title</label>
+            <input type="text" class="form-control" id="title" />
+          </div>
+          <div class="mb-3">
+            <label for="description" class="form-label">Description</label>
+            <input type="text" class="form-control" id="description" />
+          </div>
+          <div class="mb-3">
+            <label for="genre" class="form-label">Genre</label>
+            <input type="text" class="form-control" id="genre" />
+          </div>
+          <div class="mb-3">
+            <label for="publisher" class="form-label">Publisher</label>
+            <input type="text" class="form-control" id="publisher" />
+          </div>
+          <div class="mb-3">
+            <label for="ageRating" class="form-label">Age Rating</label>
+            <input type="text" class="form-control" id="ageRating" />
+          </div>
+          <div class="mb-3">
+            <label for="UpFile" class="form-label">File to Upload</label>
+            <input type="file" class="form-control" id="UpFile" />
+          </div>
+          <button type="button" id="subNewForm" class="btn btn-primary">
+            Submit
+          </button>
+          <br /><br />
+        </div>
+        <div class="col-2"></div>
+      </div>
+
+      <!-- View Asset Area -->
+      <div class="row align-items-start">
+        <div class="col-2"></div>
+        <div class="col-8" style="text-align: left">
+          <div style="padding: 5px">
+            <a href="viewfiles.html" id="viewVideos" class="btn btn-primary"
+              >View Media</a
+            >
+          </div>
+          <div id="ImageList">
+            <h4>
+              Please click the view Buttons button if you wish to view Contents
+              on the Account.
+            </h4>
+          </div>
+        </div>
+        <div class="col-2"></div>
+      </div>
+    </div>
+
+    <script src="JS/auth.js"></script>
+  </body>
+</html>

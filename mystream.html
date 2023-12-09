@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StreamApp - Home</title>
+
+    <!-- Include Bootstrap and Custom CSS from your second HTML page -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/mystream.css" />
+    <!-- Include JavaScript files for authentication and additional functionality -->
+    <script src="https://alcdn.msauth.net/browser/2.18.0/js/msal-browser.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="auth.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="navbar">
+        <img src="/mystreamlogo.png" alt="StreamApp Logo" class="logo" />
+        <!-- Modified Sign In Button -->
+        <a href="#" class="btn-sign-in" onclick="signIn()">Sign In</a>
+      </header>
+
+      <div class="hero-section">
+        <h1>Welcome to StreamApp</h1>
+        <p>Unlimited movies, TV shows, and more.</p>
+        <div class="cta-buttons">
+          <button class="btn-main">JOIN NOW</button>
+          <button class="btn-transparent">LEARN MORE</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
