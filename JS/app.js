@@ -88,6 +88,7 @@ function getVideos() {
               <p class="card-text">File Name: ${val["fileName"]}</p>
               <p class="card-text">Uploaded by: ${val["userName"]} </p>
               <p class="card-text">Description: ${val["description"]}</p>
+              <p class="card-text">Genre: ${val["genre"]}</p>
             </div>
             <div class="card-footer">
               <button type="button" class="btn btn-primary btn-sm">Like</button>
